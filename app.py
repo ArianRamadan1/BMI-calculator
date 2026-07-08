@@ -1,6 +1,8 @@
 import streamlit as st
 from pymongo import MongoClient
 
+st.write(st.secrets["MONGO_URI"])
+
 # Merr MongoDB URI nga secrets.toml
 MONGO_URI = st.secrets["MONGO_URI"]
 
@@ -82,3 +84,5 @@ if st.button("Llogarit BMI"):
 
     except ValueError:
         st.error("Ju lutem vendosni vetem numra per gjatesine dhe peshen.")
+
+        
