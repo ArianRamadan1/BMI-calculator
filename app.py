@@ -2,7 +2,7 @@ import streamlit as st
 from pymongo import MongoClient
 
 # MongoDB Atlas Connection
-MONGO_URI = "mongodb+srv://username:password@cluster0.xxxxx.mongodb.net/"
+
 
 try:
     client = MongoClient(MONGO_URI)
